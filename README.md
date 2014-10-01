@@ -16,3 +16,8 @@ Example iOS project with [Nymi](http://dev.getnymi.com/) and [Simplify](https://
 1. Open project using Xcode
 
 2. Update API Keys (line 114) & Server URL (line 148) values in [ViewController.m] (https://github.com/simplifycom/simplify-nymi-example-ios/blob/master/Classes/ViewController.m)
+
+3. Start the Nymulator
+
+4. Run the Project 
+
