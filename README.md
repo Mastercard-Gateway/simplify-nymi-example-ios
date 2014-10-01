@@ -17,7 +17,13 @@ Example iOS project with [Nymi](http://dev.getnymi.com/) and [Simplify](https://
 
 2. Update API Keys (line 114) & Server URL (line 148) values in [ViewController.m] (https://github.com/simplifycom/simplify-nymi-example-ios/blob/master/Classes/ViewController.m)
 
-3. Start the Nymulator
+3. Update local IP for emulator (line 12) with whatever your local IP is.
 
-4. Run the Project 
+4. Start the Nymulator - Add a New Device and activate it.
+
+5. Run the Project 
+
+6. Tap Start to connect to the Nymulator
+
+7. Tap Pay to initiate a Simplify Payment
 
