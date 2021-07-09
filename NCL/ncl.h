@@ -805,7 +805,7 @@ If the vocabulary used here is unfamiliar, you may want to look at a  \ref BLE r
 \param [in] intervalMin Minimum connection interval. Range is 7.5ms to 4s. Where applicable, default is 10ms. In units of 1.25ms.
 \param [in] intervalMax Maximum connection interval. Must be greater than intervalMin. Range is 7.5ms to 4s. Where applicable, default is 625ms. In units of 1.25ms.
 \param [in] timeout Supervision timeout. Must be greater than connection interval. Range: 100ms to 32s. Where applicable, default is 3s. In units of 10ms.
-\param [in] latency Slave latency. Range is 0 to 500. Where applicable, default is 10.
+\param [in] latency Agent latency. Range is 0 to 500. Where applicable, default is 10.
 
 \return  \ref NCL_TRUE Parameters accepted.
 \return  \ref NCL_FALSE One or more parameters not guaranteed to be as specified.

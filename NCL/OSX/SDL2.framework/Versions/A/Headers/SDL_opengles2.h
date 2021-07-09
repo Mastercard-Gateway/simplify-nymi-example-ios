@@ -300,7 +300,7 @@ typedef khronos_int64_t        khronos_stime_nanoseconds_t;
 #endif
 
 /*
-* Dummy value used to pad enum types to 32 bits.
+* Placeholder value used to pad enum types to 32 bits.
 */
 #ifndef KHRONOS_MAX_ENUM
 #define KHRONOS_MAX_ENUM 0x7FFFFFFF

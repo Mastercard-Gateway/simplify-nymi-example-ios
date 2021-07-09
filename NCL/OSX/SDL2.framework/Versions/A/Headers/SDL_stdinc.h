@@ -167,7 +167,7 @@ typedef uint64_t Uint64;
 
 
 #define SDL_COMPILE_TIME_ASSERT(name, x)               \
-       typedef int SDL_dummy_ ## name[(x) * 2 - 1]
+       typedef int SDL_dummy_ ## name[(x) * 2 - 1] // wokeignore:rule=dummy - 3rd party usage
 /** \cond */
 #ifndef DOXYGEN_SHOULD_IGNORE_THIS
 SDL_COMPILE_TIME_ASSERT(uint8, sizeof(Uint8) == 1);
@@ -190,13 +190,12 @@ SDL_COMPILE_TIME_ASSERT(sint64, sizeof(Sint64) == 8);
 /** \cond */
 #ifndef DOXYGEN_SHOULD_IGNORE_THIS
 #if !defined(__ANDROID__)
-   /* TODO: include/SDL_stdinc.h:174: error: size of array 'SDL_dummy_enum' is negative */
 typedef enum
 {
-    DUMMY_ENUM_VALUE
-} SDL_DUMMY_ENUM;
+    DUMMY_ENUM_VALUE // wokeignore:rule=dummy - 3rd party usage
+} SDL_DUMMY_ENUM; // wokeignore:rule=dummy - 3rd party usage
 
-SDL_COMPILE_TIME_ASSERT(enum, sizeof(SDL_DUMMY_ENUM) == sizeof(int));
+SDL_COMPILE_TIME_ASSERT(enum, sizeof(SDL_DUMMY_ENUM) == sizeof(int)); // wokeignore:rule=dummy - 3rd party usage
 #endif
 #endif /* DOXYGEN_SHOULD_IGNORE_THIS */
 /** \endcond */

@@ -159,7 +159,7 @@ struct SDL_SysWMmsg
         } uikit;
 #endif
         /* Can't have an empty union */
-        int dummy;
+        int placeholder;
     } msg;
 };
 
@@ -231,7 +231,7 @@ struct SDL_SysWMinfo
 #endif
 
         /* Can't have an empty union */
-        int dummy;
+        int placeholder;
     } info;
 };
 
